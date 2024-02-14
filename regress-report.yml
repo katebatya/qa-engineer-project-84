@@ -1,0 +1,65 @@
+test-cases:
+  - summary: |
+      Добавление товара в корзину
+    status: pass
+
+ - summary: |
+      Удаление товара из корзины
+    status: pass
+
+  - summary: |
+      Оформление заказа
+    status: pass  
+
+  - summary: |
+      Фильтр по категории товара
+    status: pass
+
+  - summary: |
+      Фильтр по бренду товара
+    status: pass
+
+  - summary: |
+      Проверка кнопкок переключения страницы Предыдущая Следующая
+    status: fail
+
+     - summary: |
+      Переключение языка страницы
+    status: fail
+
+    - summary: |
+      Сброс всех фильтров
+    status: pass
+
+bugreports:
+  - summary: |
+      Отсутствует кнопка переключения страницы Предыдущая
+    environment: |
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/ /Chrome Версия 120.0.6099.234 (Официальная сборка), (x86_64)/macOS 11.6.1
+    steps-to-reproduce: |
+    1. Зайти на главную страницу сайта https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+   expected-result: |
+      На главной странице, над каталогом с товарами две кнопки переключения страницы Предыдущая/Следующая
+    actual-result: |
+      Отсутствует кнопка переключения страницы Предыдущая
+
+  - summary: |
+      При смене языка страницы на Русский остаются непереведенные данные
+    environment: |
+     https://products-store-git-v2bugfixes-hexlet-components.vercel.app/ /Chrome Версия 120.0.6099.234 (Официальная сборка), (x86_64)/macOS 11.6.1
+    steps-to-reproduce: |
+     1. Зайти на главную страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+     2. Нажать на кнопку Language
+     3. Из выпадающего списка выбрать Russian
+    expected-result: |
+      Вся страница полностью переведена на выбранный язык
+    actual-result: |
+     Страница переведена неполностью
+     Не переведено описание товара в карточке товара в каталоге и в карточке товара на странице товара
+     Нажимая на Категорию в фильтре товара выпадает окно с непереведенными категориями
+
+
+
+
+
+
