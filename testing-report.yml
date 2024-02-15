@@ -26,6 +26,6 @@ status : pass
     Переключение языка страницы 
 status : fail
 
- - summary: |
+- summary: |
     Сброс всех фильтров
 status : pass
