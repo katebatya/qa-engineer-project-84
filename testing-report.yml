@@ -1,31 +1,31 @@
 - summary: |
     Добавление товара в корзину
-status : pass
+  status: pass
 
 - summary: |
     Удаление товара из корзины
-status : pass
+  status: pass
 
 - summary: |
     Оформление заказа
-status : pass
+  status: pass
 
 - summary: |
     Фильтр по категории товара
-status : pass
+  status: pass
 
 - summary: |
     Фильтр по бренду товара
-status : pass
+  status: pass
 
 - summary: |
     Проверка кнопкок переключения страницы Предыдущая Следующая
-status : pass
+  status: pass
 
 - summary: |
     Переключение языка страницы 
-status : fail
+  status: fail
 
 - summary: |
     Сброс всех фильтров
-status : pass
+  status: pass
